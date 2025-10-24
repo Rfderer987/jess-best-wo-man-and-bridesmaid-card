@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Will you be my groomsman?</title>
+<title>Will you be my best (wo)man & bridesmaid?</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
   :root{
@@ -22,7 +22,6 @@
   .stage{display:flex; flex-direction:column; align-items:center; gap:14px; width:100%}
   .note{font:400 14px/1.4 "Libre Baskerville", serif; color:var(--hint); text-align:center}
 
-  /* Card shell */
   .wrap{perspective:1600px; width:var(--card-w); height:var(--card-h)}
   .card{width:100%; height:100%; position:relative; transform-style:preserve-3d;
         transition:transform 900ms cubic-bezier(.18,.82,.22,1); cursor:pointer; border-radius:14px;}
@@ -35,18 +34,16 @@
   .border{position:absolute; inset:18px; border-radius:10px; border:1px solid var(--edge);
           box-shadow: inset 0 0 0 3px rgba(255,255,255,.7);}
 
-  /* Front */
   .front{display:grid; place-items:center; padding:38px 40px;
          background:linear-gradient(180deg,#fffef9,#f9f5ed)}
-  .cover{text-align:center; max-width:520px}
+  .cover{text-align:center; max-width:620px}
   .brand{font:500 13px/1 "Libre Baskerville", serif; letter-spacing:.32em; text-transform:uppercase; color:var(--accent); margin-bottom:18px}
-  .title{font:700 38px/1.1 "Playfair Display", serif; margin:0}
+  .title{font:700 36px/1.2 "Playfair Display", serif; margin:0}
   .subtitle{margin:.7rem 0 0; color:var(--hint)}
   .openBtn{display:inline-block; margin-top:24px; padding:10px 18px; border-radius:999px; color:#fff;
            background:linear-gradient(180deg,#9b6d3f,#7f552e); font:600 13px/1 "Libre Baskerville", serif; letter-spacing:.12em; text-transform:uppercase;
            box-shadow:0 10px 18px rgba(139,94,52,.25)}
 
-  /* Back (inside) — desktop layout */
   .back{transform:rotateY(-180deg); padding:26px 28px}
   .inner{
     position:relative; height:100%;
@@ -60,34 +57,14 @@
   .photo figure{margin:0; width:100%; height:100%; border-radius:12px; overflow:hidden; border:1px solid #e8e2d8; box-shadow:0 14px 28px rgba(0,0,0,.12)}
   .photo img{width:100%; height:100%; object-fit:cover; filter:grayscale(12%)}
 
-  /* ---------- Mobile: single scrolling column with image at the end ---------- */
   @media (max-width: 900px){
-    :root{ --card-w: 92vw; --card-h: 84vh; }   /* bigger reading area */
+    :root{ --card-w: 92vw; --card-h: 84vh; }
     body{ padding:16px; }
-
-    /* Inside page becomes one scrollable column */
-    .inner{
-      display:block;
-      height:100%;
-      overflow:auto;                 /* the WHOLE inside scrolls */
-      -webkit-overflow-scrolling:touch;
-      padding:12px 14px 16px 14px;
-    }
-    .letter{
-      overflow:visible;              /* let text flow naturally */
-      padding:6px 6px 10px 6px;
-    }
-    .photo{
-      padding:0; margin-top:12px;    /* sits after the letter */
-    }
-    .photo figure{
-      height:auto;
-      border-radius:12px; overflow:hidden;
-    }
-    .photo img{
-      width:100%; height:auto;       /* natural image height */
-      object-fit:contain; filter:none;
-    }
+    .inner{display:block; height:100%; overflow:auto; -webkit-overflow-scrolling:touch; padding:12px 14px 16px 14px;}
+    .letter{overflow:visible; padding:6px 6px 10px 6px;}
+    .photo{padding:0; margin-top:12px;}
+    .photo figure{height:auto; border-radius:12px; overflow:hidden;}
+    .photo img{width:100%; height:auto; object-fit:contain; filter:none;}
   }
 </style>
 </head>
@@ -102,8 +79,8 @@
           <div class="border" aria-hidden="true"></div>
           <div class="cover">
             <div class="brand">Yufei &amp; Justin</div>
-            <h1 class="title">Will you be my groomsman?</h1>
-            <p class="subtitle">Raul, I’ve got something special to ask you.</p>
+            <h1 class="title">Jess</h1>
+            <p class="subtitle">Will you be my <strong>best (wo)man &amp; bridesmaid</strong>?</p>
             <span class="openBtn">Open card</span>
           </div>
         </section>
@@ -113,18 +90,26 @@
           <div class="border" aria-hidden="true"></div>
           <div class="inner">
             <article class="letter" aria-label="Letter">
-              <h2>Raul,</h2>
-              <p>You’re my oldest friend and I cannot think of anyone better to stand by my side at the altar a year from now. These past two weeks have been incredible. I’m so incredibly blessed to have created so many new memories and experiences with you… dare I say we’ll be doing that for the rest of our days.</p>
-              <p>From being there for the big moments watching you and Jen getting married to the small moments of pigging out on food and sitting around Beecroft doing nothing, I cannot wait for you both to come back so we can do it again and again and again.</p>
-              <p>When I wrote in your card I cannot wait for our next chapter I truly meant it. Dirty thirties, being married, having kids, Saturday tennis lessons, and encouraging them to play with each other until they’re family like us, beating them if they don’t — I look forward to it every day. August 30 brings us closer to that dream.</p>
-              <p>I hate that you both have to go but I’ll see you back in Sydney soon.</p>
-              <p class="signoff">I love you like a brother, Raul.<br><strong>Love, Justin</strong></p>
+              <h2>Jess,</h2>
+
+              <p>You’ve had many names over the years. My younger sister, my older sister, my best friend, my confidant, the boo boo to my boo, CPO (chief purchasing officer), future sister in law, future fun Jess Gooma and Uncle Jemz, and most importantly (at least for the next year) your joint role as best (wo)man and bridesmaid.</p>
+
+              <p>It’s difficult to put into words how much you mean to me. When I talk about siblings with people, I always ask are you close? Often times the answer is not really, sometimes it’s yes but I know that it can never be as close as what we are. How? Because I don’t think it’s actually possible. </p>
+
+              <p>To me it’s so normal to have this relationship with your sibling but the reality is what we have is very rare. Not only because what we ourselves have is rare but also your closest friends are my closest friends. QJs, GTs, HTs, LTs, ITs, DTs… the list goes on. I never take for granted our relationship. It’s exactly the relationship I want our kids to have in the future. It’s the relationship I want our kids to have with your kids.</p>
+
+              <p>I’ve always said I wanted a boy then a girl because the older brother can protect the younger sister. While true generally, truthfully I’m scared of tinkering with the formula that has led to what we are today. Perhaps I shouldn’t be scared though. You’ve played the role of an older sister from teaching me how to dress, to helping me understand what emotions are to teaching me how to dance for my formal and now full circle to teaching me how to dance at our wedding. I am endlessly grateful for you. </p>
+
+              <p>By the way, you have just under a year to prepare another speech. While the card says will you be best (wo)man and bridesmaid, it’s not really asking. Good luck ❤️</p>
+
+              <p class="signoff">I love you, boo boo.</p>
+
+              <p><strong>Love,<br>Boo</strong></p>
             </article>
 
-            <!-- Image becomes part of the flow on mobile -->
             <div class="photo" aria-label="Photo">
               <figure>
-                <img src="assets/raul.jpg" alt="Raul and friends celebrating at a wedding">
+                <img src="assets/jess.jpg" alt="Jess with family and friends">
               </figure>
             </div>
           </div>
